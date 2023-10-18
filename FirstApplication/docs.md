@@ -13,5 +13,12 @@
 + `typeDefs` is a string that contains all the schemas.
   > `Query` is the default keyword to define schema of queries.
 
-
 + `resolvers` include callback functions that returns ressolves query. 
+
+
+## Client side:
+
++ `**client**` is created with `uri` and `cache` as it's properties. 
++ `<App/>` component is wrapped by `<ApolloProvider client={client}>`
++ `useQuery()` hook is used.
++ `const { data,error,loading } = useQuery(query)` the hook returns three attributes.

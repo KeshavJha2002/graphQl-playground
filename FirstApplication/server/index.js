@@ -35,7 +35,7 @@ const startServer = async() => {
             }
         `,
         resolvers: {
-            Todo: {
+            Todo: { // ###
                 user: async(todo) => {
                     return (await axios.get(`${url}users/${todo.userId}`)).data;
                 }
